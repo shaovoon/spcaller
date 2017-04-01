@@ -1,0 +1,34 @@
+﻿<Window x:Class="SPCodeGenWpfApp.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Stored Procedure Caller Generator" Height="374" Width="459">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                <GradientStop Color="Purple" Offset="0"></GradientStop>
+                <GradientStop Color="Aqua" Offset="1.0"></GradientStop>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid Margin="0,1,0,0" Name="grid1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="128*" />
+                <RowDefinition Height="40*" />
+                <RowDefinition Height="110*" />
+            </Grid.RowDefinitions>
+            <Label Height="28" HorizontalAlignment="Left" Margin="6,6,0,0" Name="lblSignature" VerticalAlignment="Top" Width="166">Stored Procedure Signature</Label>
+            <TextBox Margin="6,39,6,0" Name="txtSignature" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" />
+            <Label Grid.Row="1" HorizontalAlignment="Left" Margin="11,6,0,0" Name="lblMethodName" Width="95" Height="24.545" VerticalAlignment="Top">Method Name:</Label>
+            <TextBox Grid.Row="1" Margin="101,6,6,0" Name="txtMethodName" Height="24.545" VerticalAlignment="Top" />
+            <GroupBox Grid.Row="2" Header="Return Type" HorizontalAlignment="Left" Margin="11,5,0,0" Name="grpRetType" Width="130" Height="110" VerticalAlignment="Top">
+                <Grid Height="87" Name="grid2" Width="119">
+                    <RadioButton Height="16" Margin="19,14,20,0" Name="radioTables" VerticalAlignment="Top" GroupName="retType">Tables</RadioButton>
+                    <RadioButton Margin="19,36,20,0" Name="radioInteger" GroupName="retType" Height="16" VerticalAlignment="Top">Integer</RadioButton>
+                    <RadioButton Margin="19,58,20,0" Name="radioNone" GroupName="retType" Height="22" VerticalAlignment="Top">None</RadioButton>
+                </Grid>
+            </GroupBox>
+            <Button Grid.Row="2" Height="23" HorizontalAlignment="Right" Margin="0,0,15,17.554" Name="btnGenCode" VerticalAlignment="Bottom" Width="107" Click="btnGenCode_Click">Generate Code</Button>
+            <CheckBox Grid.Row="2" Height="16" HorizontalAlignment="Right" Margin="0,27,-1,0" Name="chkNoNullableTypes" VerticalAlignment="Top" Width="120" IsChecked="True">No Nullable Types</CheckBox>
+            <CheckBox Grid.Row="2" HorizontalAlignment="Right" Margin="0,49,-1,0" Name="chkMySql" Width="120" Height="16.554" VerticalAlignment="Top">MySQL Code</CheckBox>
+        </Grid>
+    </Grid>
+</Window>

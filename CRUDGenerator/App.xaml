@@ -1,0 +1,35 @@
+﻿<Application x:Class="CRUDGenerator.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:CRUDGenerator" 
+    StartupUri="Window1.xaml">
+    <Application.Resources>
+        <x:Array x:Key="ColorListString" Type="local:ComboBoxItemString">
+            <local:ComboBoxItemString ValueString = "BigInt" />
+            <local:ComboBoxItemString ValueString = "Binary" />
+            <local:ComboBoxItemString ValueString = "Bit" />
+            <local:ComboBoxItemString ValueString = "Char" />
+            <local:ComboBoxItemString ValueString = "DateTime" />
+            <local:ComboBoxItemString ValueString = "Decimal" />
+            <local:ComboBoxItemString ValueString = "Float" />
+            <local:ComboBoxItemString ValueString = "Image" />
+            <local:ComboBoxItemString ValueString = "Integer" />
+            <local:ComboBoxItemString ValueString = "Money" />
+            <local:ComboBoxItemString ValueString = "NChar" />
+            <local:ComboBoxItemString ValueString = "NText" />
+            <local:ComboBoxItemString ValueString = "NVarChar" />
+            <local:ComboBoxItemString ValueString = "Real" />
+            <local:ComboBoxItemString ValueString = "UniqueIdentifier" />
+            <local:ComboBoxItemString ValueString = "SmallDateTime" />
+            <local:ComboBoxItemString ValueString = "SmallInt" />
+            <local:ComboBoxItemString ValueString = "SmallMoney" />
+            <local:ComboBoxItemString ValueString = "Text" />
+            <local:ComboBoxItemString ValueString = "Timestamp" />
+            <local:ComboBoxItemString ValueString = "TinyInt" />
+            <local:ComboBoxItemString ValueString = "VarBinary" />
+            <local:ComboBoxItemString ValueString = "VarChar" />
+            <local:ComboBoxItemString ValueString = "Variant" />
+        </x:Array>
+
+    </Application.Resources>
+</Application>

@@ -1,0 +1,18 @@
+Version 0.9.2 Beta
++ Updated the method name textbox whenever there is paste event for SP generator applications.
++ Fixed the problem that there is no parameter generated when there is no closing ) for the sp signature.
+
+Version 0.9 Beta
++ Provides a non-empty default constructor for user-defined data class.
+
+Version 0.8 Beta
++ Stored Procedure Caller Generator now supports table-valued parameters.
+
+Version 0.7 Beta
++ Added SPGenGenForm Project.
+
+Version 0.6 Beta
++ Added a unit test project. No change to the library.
+
+Version 0.5 Beta
++ 1st Release.
