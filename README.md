@@ -1,4 +1,4 @@
-# spcaller
+# C# Stored Procedure Caller Code Generator
 C# Code Generator for calling SQL Server Stored Procedures
 
-[Temporary Documentation](https://spcaller.codeplex.com/documentation)
+[Documentation at Codeplex Archive](https://codeplexarchive.org/project/spcaller)
